@@ -1,0 +1,113 @@
+/*======GOOGLE FONT======*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*======REST======*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+}
+
+/*======VARIABLES=======*/
+:root {
+	/*---COLOR---*/
+	--primary: #745217;
+	--clr-white: #fff;
+	--bg: #0000008c;
+	--clr-error: hsl(0, 58%, 59%);
+	--resetColor: #adabab;
+	--increseColor: #7deb9e;
+	--decresetColor: #e67d7d;
+
+	/*----FONT-----*/
+	--FS: min(2.25rem, 3vh);
+
+	/*----GENERAL---*/
+	--border-radius: 0.5rem;
+	--padding: 1rem;
+	--hover: #745174;
+	--transition: all 0.3s linear;
+}
+
+/*------GENELA STYLES-----*/
+body {
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.6;
+	background: var(--bg);
+	transition: all 0.3s linear;
+}
+
+h1 {
+	color: #eee;
+	padding: 1rem;
+	text-align: center;
+}
+
+section {
+	margin: 0 auto;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: var(--padding);
+	margin: 0 auto;
+	max-width: 100%;
+	width: 50rem;
+	background-color: whitesmoke;
+	margin-top: 1rem;
+	border-radius: var(--border-radius);
+	min-height: 50vh;
+}
+.counter {
+	font-size: 12rem;
+	text-align: center;
+}
+button {
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+	border-radius: var(--border-radius);
+	margin: 0.5rem;
+	cursor: pointer;
+	padding: var(--padding);
+}
+.reset {
+	background-color: var(--resetColor);
+}
+.increse {
+	background-color: var(--increseColor);
+}
+.decrese {
+	background-color: var(--decresetColor);
+}
+
+/*==========MEDIA QUERY===========*/
+@media (max-width: 768px) {
+	main {
+		padding: 2rem;
+		width: 25rem;
+	}
+	button {
+		font-size: 1rem;
+	}
+	.counter {
+		font-size: 6rem;
+	}
+}
+@media (max-width: 568px) {
+	main {
+		padding: 1rem;
+		width: 21rem;
+	}
+	button {
+		font-size: 0.9rem;
+	}
+	.counter {
+		font-size: 4rem;
+	}
+}
